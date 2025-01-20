@@ -85,7 +85,63 @@
     font-weight: 400;
 }
 
+/* Heading Content Section */
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+.header-content{
+    width: 640px;
+}
+.heading-text{
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
+#empowering{
+    color: #FEA301;
+}
+#towards-vision{
+    color: #01ACFD;
+}
+.heading-description{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.heading-btn{
+    background-color: #111111;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.header-image{
+    width: 100%;
+}
+
 
 
 
 /* Responsive Section */
+@media screen and (max-width: 576px){
+    .header-section{
+        max-width: 390px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .logo-heading, .nav-container, .btn-nav{
+        display: none;
+    }
+
+    .header-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        align-items: center;
+        
+    }
+
+}
+
